@@ -1,1 +1,0 @@
-Mini doc do que foi feito ate o momento no codigo do robo e o que ainda precisa ser feito 
