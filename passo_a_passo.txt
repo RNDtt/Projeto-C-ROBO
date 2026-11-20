@@ -1,0 +1,19 @@
+
+Passo 1: Preparar o ambiente e a placa
+
+• Instale a Arduino IDE: Baixe e instale a IDE oficial do Arduino no seu computador.
+• Conecte o Arduino: Ligue a placa ao computador usando um cabo USB compatível.
+• Selecione a placa: Vá em Ferramentas > Placa (ou Tools > Board) e escolha o modelo correto (ex.: Arduino Uno).
+• Selecione a porta: Vá em Ferramentas > Porta (ou Tools > Port) e selecione a porta COM correspondente ao Arduino.
+
+Passo 2: Escrever e enviar o código
+
+• Abra ou crie um sketch: Todo código no Arduino usa a estrutura com void setup() (roda uma vez ao ligar) e void loop() (roda continuamente). Você pode testar com o exemplo padrão Blink (Arquivo > Exemplos > 01.Basics > Blink).
+• Verifique o código: Clique no ícone de Verificar (seta/marca de seleção) para checar erros de sintaxe (Ctrl+R).
+• Faça o upload: Clique no ícone de Carregar (seta para a direita) para compilar e enviar o código para o microcontrolador (Ctrl+U). Aguarde a mensagem de conclusão no console inferior.
+
+Passo 3: Realizar o teste
+
+• Teste físico: Observe atuadores como LEDs, motores ou displays ligados aos pinos (o Blink faz o LED interno piscar).
+• Teste via Monitor Serial: Se o código usar Serial.print() ou Serial.println(), clique no ícone do Monitor Serial (lupa no canto superior direito) para ver mensagens e leituras de sensores em tempo real.
+• Diagnóstico rápido: Se o upload falhar, confira se o cabo USB está firme, se a porta COM correta está marcada e se não há outro programa ocupando a porta

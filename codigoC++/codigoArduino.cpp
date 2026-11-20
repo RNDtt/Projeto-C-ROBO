@@ -39,10 +39,8 @@ Serial.print("Sensor da tras: ");
 Serial.println(digitalRead(sensor2));
 delay(1000);
 */
-//Verifica se tem alguma coisa na sua frente e se os sensor estão no
-branco
-if (distancia > 20 && digitalRead(sensor1) == 0 && digitalRead(sensor2)
-== 0) {
+//Verifica se tem alguma coisa na sua frente e se os sensor estão no branco
+if (distancia > 20 && digitalRead(sensor1) == 0 && digitalRead(sensor2) == 0) {
 Serial.println("procurando oponente");
 //Duas formas de procurar o oponente na arena
 procura();//Procura em forma de quadrado
@@ -51,8 +49,7 @@ procura();//Procura em forma de quadrado
 //Se caso encontrar algo na sua frente
 if (distancia < 20 && distancia > 0 && digitalRead(sensor1) == 0 &&
 digitalRead(sensor2) == 0) {
-while (digitalRead(sensor1) == 0) { //Prende na condição até o sensor
-encotrar a borda da arena
+while (digitalRead(sensor1) == 0) { //Prende na condição até o sensor encotrar a borda da arena
 Serial.println("achei o oponente");
 frente();//Movimenta para frente
 }
@@ -101,8 +98,7 @@ motor2.run(FORWARD); //Motor dianteiro esquerdo
 motor3.run(BACKWARD); //Motor dianteiro direito
 motor4.run(BACKWARD); //Motor traseiro direito
 }
-//********************Movimenta o robô em forma de
-quadrado********************
+//********************Movimenta o robô em forma de quadrado********************
 void procura() {
 frente();
 delay(300);
